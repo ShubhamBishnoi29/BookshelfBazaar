@@ -8,9 +8,8 @@ const Items=()=>{
     return(
         <div className="  bg-white ">
             <h1 className="  font-bold  ml-5 mt-3">Items in Cart</h1>
-        // eslint-disable-next-line
-        {cartData.map((item)=>
-          <CardItem book={item}/>
+        {cartData.map((item, key)=>
+          <CardItem book={item} key={key}/>
       
         )}
         </div>
